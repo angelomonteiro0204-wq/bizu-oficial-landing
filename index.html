@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bizu do Cadete - Preparação Militar</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui; background: #F5F6FA; }
+    
+    header {
+      background: linear-gradient(135deg, #1B3A6B 0%, #2E5090 100%);
+      color: white;
+      padding: 1.5rem 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .header-content h1 { margin: 0; font-size: 1.5rem; }
+    .header-content p { margin: 0; font-size: 0.9rem; opacity: 0.9; }
+    
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.3s;
+    }
+    
+    .nav-links a:hover { opacity: 0.8; }
+    
+    .hero {
+      background: linear-gradient(135deg, #1B3A6B 0%, #2E5090 100%);
+      color: white;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .hero h2 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; }
+    
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      background: white;
+      color: #1B3A6B;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+    
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+      margin-left: 1rem;
+    }
+    
+    .btn-secondary:hover { background: white; color: #1B3A6B; }
+    
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .feature-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-left: 4px solid #1B3A6B;
+    }
+    
+    .feature-card .icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .feature-card h3 { color: #1B3A6B; margin-bottom: 0.5rem; }
+    .feature-card p { color: #666; line-height: 1.6; }
+    
+    .pricing {
+      background: white;
+      padding: 3rem 1rem;
+      border-radius: 12px;
+      margin-bottom: 3rem;
+    }
+    
+    .pricing h2 { text-align: center; color: #1B3A6B; margin-bottom: 2rem; }
+    
+    .pricing-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .pricing-card {
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    
+    .pricing-card:hover {
+      border-color: #1B3A6B;
+      box-shadow: 0 5px 20px rgba(27, 58, 107, 0.1);
+    }
+    
+    .pricing-card h3 { color: #1B3A6B; margin-bottom: 1rem; }
+    .pricing-card .price { font-size: 2rem; color: #1B3A6B; font-weight: bold; margin-bottom: 1rem; }
+    .pricing-card ul { list-style: none; margin: 1.5rem 0; text-align: left; }
+    .pricing-card li { padding: 0.5rem 0; color: #666; }
+    .pricing-card li:before { content: "✓ "; color: #16A34A; font-weight: bold; }
+    
+    footer {
+      background: #1B3A6B;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    
+    h2 { color: #1B3A6B; }
+    h3 { color: #1B3A6B; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <div>
+      <p>Preparação Militar</p>
+      <h1>🎖️ Bizu do Cadete</h1>
+    </div>
+    <div class="nav-links">
+      <a href="#features">Recursos</a>
+      <a href="#pricing">Preços</a>
+      <a href="https://bizu-oficial-web.vercel.app">Acessar App</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Estude com Questões Inteligentes</h2>
+    <p>Prepare-se para concursos militares com um sistema de aprendizado adaptativo baseado em IA</p>
+    <a href="https://bizu-oficial-web.vercel.app" class="btn">Começar Agora</a>
+    <a href="#pricing" class="btn btn-secondary">Ver Planos</a>
+  </div>
+</section>
+
+<main>
+  <section id="features">
+    <h2 style="text-align: center; margin-bottom: 2rem;">Recursos Principais</h2>
+    <div class="features">
+      <div class="feature-card">
+        <div class="icon">📚</div>
+        <h3>Upload de Materiais</h3>
+        <p>Faça upload de PDFs e PowerPoints. Nossa IA gera automaticamente questões de múltipla escolha baseadas no conteúdo.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🎯</div>
+        <h3>Quiz Inteligente</h3>
+        <p>Responda questões no estilo Qconcursos com feedback imediato. Veja a resposta correta e explicações detalhadas.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📊</div>
+        <h3>Estatísticas</h3>
+        <p>Acompanhe seu desempenho com estatísticas detalhadas, taxa de acerto e histórico de questionários.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">⚡</div>
+        <h3>Rápido e Eficiente</h3>
+        <p>Gere questionários em segundos. Estude no seu ritmo, quando quiser, de qualquer dispositivo.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔒</div>
+        <h3>Seguro</h3>
+        <p>Seus dados são protegidos com criptografia de ponta. Acesso seguro com autenticação.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📱</div>
+        <h3>Multiplataforma</h3>
+        <p>Acesse pelo navegador, tablet ou smartphone. Sincronize seu progresso em todos os dispositivos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h2>Planos e Preços</h2>
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <h3>Gratuito</h3>
+        <div class="price">R$ 0</div>
+        <p style="color: #666; margin-bottom: 1.5rem;">Perfeito para começar</p>
+        <ul>
+          <li>1 questionário por mês</li>
+          <li>Até 10 questões</li>
+          <li>Histórico básico</li>
+          <li>Suporte por email</li>
+        </ul>
+        <a href="https://bizu-oficial-web.vercel.app" class="btn" style="margin-top: 1.5rem;">Começar</a>
+      </div>
+      <div class="pricing-card">
+        <h3>Pro</h3>
+        <div class="price">R$ 29,90</div>
+        <p style="color: #666; margin-bottom: 1.5rem;">Mais popular</p>
+        <ul>
+          <li>Questionários ilimitados</li>
+          <li>Até 50 questões por quiz</li>
+          <li>Histórico completo</li>
+          <li>Estatísticas avançadas</li>
+          <li>Suporte prioritário</li>
+        </ul>
+        <a href="https://bizu-oficial-web.vercel.app" class="btn" style="margin-top: 1.5rem;">Assinar</a>
+      </div>
+      <div class="pricing-card">
+        <h3>Premium</h3>
+        <div class="price">R$ 79,90</div>
+        <p style="color: #666; margin-bottom: 1.5rem;">Para profissionais</p>
+        <ul>
+          <li>Tudo do Pro</li>
+          <li>Questionários ilimitados</li>
+          <li>Até 100 questões por quiz</li>
+          <li>Análise de desempenho</li>
+          <li>Acesso a materiais exclusivos</li>
+          <li>Suporte 24/7</li>
+        </ul>
+        <a href="https://bizu-oficial-web.vercel.app" class="btn" style="margin-top: 1.5rem;">Assinar</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Bizu do Cadete. Todos os direitos reservados.</p>
+  <p style="margin-top: 1rem; opacity: 0.8; font-size: 0.9rem;">Preparação Militar • Estude com Questões Inteligentes</p>
+</footer>
+
+</body>
+</html>
